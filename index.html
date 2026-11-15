@@ -1,0 +1,2951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#061d32" />
+    <meta name="description"
+        content="Namarta Mankar — Staff Nurse, B.Sc Nursing, with 4 years of nursing experience in Bhopal." />
+    <title>Namarta Mankar | Nursing Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        :root {
+            --navy: #061d32;
+            --navy-2: #092944;
+            --blue: #1675ff;
+            --blue-deep: #0756cf;
+            --lime: #e4eea5;
+            --white: #fff;
+            --muted: #aebdca;
+            --ink: #10283e;
+            --pale: #f3f7fa;
+            --line: rgba(255, 255, 255, .13);
+            --shadow: 0 24px 70px rgba(2, 20, 37, .18);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            color: var(--ink);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        .container {
+            width: min(1180px, calc(100% - 48px));
+            margin: auto;
+        }
+
+        .top-strip {
+            background: #242424;
+            color: #f5f7f8;
+            font-size: 13px;
+        }
+
+        .top-inner {
+            min-height: 52px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .brand-mini {
+            font-family: Manrope, sans-serif;
+            font-weight: 800;
+            letter-spacing: -.5px;
+        }
+
+        .brand-mini span {
+            color: #9bd24a;
+        }
+
+        .top-contact {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            color: #d9e4ee;
+        }
+
+        .top-contact i {
+            color: var(--lime);
+            margin-right: 7px;
+        }
+
+        .nav-wrap {
+            background: var(--navy);
+            padding: 0 0 16px;
+            position: relative;
+            z-index: 20;
+        }
+
+        .navbar {
+            min-height: 88px;
+            padding: 0 28px;
+            border-radius: 0 0 17px 17px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font: 800 28px Manrope, sans-serif;
+            color: var(--navy);
+            white-space: nowrap;
+            letter-spacing: -1.2px;
+        }
+
+        .logo-mark {
+            width: 39px;
+            height: 39px;
+            display: grid;
+            place-items: center;
+            color: white;
+            background: var(--blue);
+            border-radius: 12px 12px 12px 4px;
+            transform: rotate(-4deg);
+            font-size: 20px;
+        }
+
+        .logo small {
+            display: block;
+            font: 600 9px "Roboto", sans-serif;
+            letter-spacing: 2px;
+            color: #718093;
+            margin-top: -3px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: clamp(17px, 2.5vw, 34px);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .6px;
+        }
+
+        .nav-links a {
+            position: relative;
+            padding: 9px 0;
+        }
+
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background: var(--blue);
+            transition: width .25s;
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .icon-btn,
+        .menu-btn {
+            border: 0;
+            background: #f2f4f6;
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            color: var(--navy);
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 23px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: .35px;
+            transition: transform .25s, box-shadow .25s, background .25s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(22, 117, 255, .22);
+        }
+
+        .btn-blue {
+            background: var(--blue);
+            color: white;
+        }
+
+        .btn-blue:hover {
+            background: var(--blue-deep);
+        }
+
+        .btn-lime {
+            background: var(--lime);
+            color: var(--navy);
+            padding: 17px 24px;
+        }
+
+        .btn-outline {
+            border-color: rgba(255, 255, 255, .8);
+            color: white;
+            background: transparent;
+        }
+
+        .menu-btn {
+            display: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: var(--navy);
+            color: white;
+            min-height: 650px;
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+        }
+
+        .hero:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 380px;
+            height: 380px;
+            border: 42px solid rgba(22, 117, 255, .13);
+            border-radius: 50%;
+            top: -270px;
+            left: -200px;
+        }
+
+        .hero:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            inset: auto -5% 14% 42%;
+            height: 1px;
+            background: rgba(22, 117, 255, .3);
+            box-shadow: 0 0 22px rgba(22, 117, 255, .4);
+        }
+
+        .hero-grid {
+            min-height: 650px;
+            display: grid;
+            grid-template-columns: 1.08fr .92fr;
+            align-items: center;
+            gap: 22px;
+            padding-top: 25px;
+            padding-bottom: 45px;
+        }
+
+        .hero-copy {
+            position: relative;
+            z-index: 3;
+            padding: 35px 0;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: var(--lime);
+            border: 1px solid rgba(228, 238, 165, .75);
+            border-radius: 30px;
+            padding: 7px 15px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1.4px;
+            margin-bottom: 25px;
+        }
+
+        .eyebrow i {
+            font-size: 12px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Manrope, sans-serif;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 5.2vw, 70px);
+            line-height: 1.12;
+            letter-spacing: -2.8px;
+            max-width: 690px;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 span {
+            color: var(--lime);
+        }
+
+        .hero-copy>p {
+            color: #b5c3d0;
+            font-size: 16px;
+            line-height: 1.85;
+            max-width: 610px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 34px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-top: 45px;
+        }
+
+        .stat strong {
+            display: block;
+            font: 800 27px Manrope, sans-serif;
+            color: white;
+        }
+
+        .stat span {
+            display: block;
+            color: #9fb0bf;
+            font-size: 11px;
+            margin-top: 4px;
+            letter-spacing: .5px;
+        }
+
+        .hero-visual {
+            min-height: 540px;
+            position: relative;
+            display: grid;
+            place-items: center;
+        }
+
+        .portrait-shape {
+            width: min(430px, 92%);
+            height: 460px;
+            border-radius: 47% 47% 25px 25px;
+            background: var(--blue);
+            border: 13px solid rgba(22, 117, 255, .38);
+            box-shadow: 0 0 0 24px rgba(22, 117, 255, .08);
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+        }
+
+        .portrait-shape:before {
+            content: "";
+            position: absolute;
+            inset: 12px;
+            border: 1px solid rgba(255, 255, 255, .24);
+            border-radius: inherit;
+        }
+
+        .photo-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            text-align: center;
+            padding: 35px;
+            color: white;
+            background: radial-gradient(circle at 50% 30%, rgba(255, 255, 255, .18), transparent 45%), linear-gradient(145deg, #2685ff, #0755c9);
+        }
+
+        .photo-placeholder i {
+            font-size: 92px;
+            opacity: .92;
+        }
+
+        .photo-placeholder strong {
+            font: 800 25px Manrope, sans-serif;
+        }
+
+        .photo-placeholder span {
+            max-width: 220px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, .8);
+            line-height: 1.6;
+        }
+
+        .portrait-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: none;
+            position: absolute;
+            inset: 0;
+        }
+
+        .float-card {
+            position: absolute;
+            right: -5px;
+            top: 72px;
+            width: 250px;
+            padding: 22px;
+            background: #203a50;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .float-card p {
+            font: italic 600 14px/1.8 Manrope, sans-serif;
+            color: #f1f5f8;
+        }
+
+        .float-card b {
+            display: block;
+            margin-top: 15px;
+            color: var(--lime);
+            font-size: 12px;
+        }
+
+        .float-card:after {
+            content: "”";
+            position: absolute;
+            right: 15px;
+            bottom: -34px;
+            color: rgba(22, 117, 255, .25);
+            font: 900 100px Georgia, serif;
+        }
+
+        .plus {
+            position: absolute;
+            color: var(--blue);
+            font-size: 62px;
+            top: 90px;
+            left: 4px;
+            animation: rotate 12s linear infinite;
+        }
+
+        .orbit {
+            position: absolute;
+            width: 490px;
+            height: 490px;
+            border: 1px dashed rgba(91, 158, 255, .22);
+            border-radius: 50%;
+            animation: rotate 35s linear infinite;
+        }
+
+        .orbit:before,
+        .orbit:after {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: var(--lime);
+            top: 18%;
+            left: 12%;
+            box-shadow: 0 0 20px var(--lime);
+        }
+
+        .orbit:after {
+            top: 75%;
+            left: 88%;
+            width: 8px;
+            height: 8px;
+            background: var(--blue);
+        }
+
+        .ecg {
+            position: absolute;
+            right: -40px;
+            bottom: 65px;
+            width: 430px;
+            opacity: .32;
+        }
+
+        .social-rail {
+            position: absolute;
+            right: 0;
+            top: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 19px;
+            background: var(--blue);
+            padding: 17px 14px;
+            border-radius: 18px 0 0 18px;
+            z-index: 4;
+        }
+
+        .social-rail a {
+            color: white;
+            font-size: 14px;
+            transition: transform .2s;
+        }
+
+        .social-rail a:hover {
+            transform: scale(1.25);
+        }
+
+        /* Common sections */
+        section.content-section {
+            padding: 100px 0;
+        }
+
+        .section-head {
+            max-width: 690px;
+            margin-bottom: 48px;
+        }
+
+        .section-tag {
+            color: var(--blue);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .section-tag:before {
+            content: "";
+            width: 25px;
+            height: 2px;
+            background: var(--lime);
+        }
+
+        .section-head h2 {
+            color: var(--navy);
+            font-size: clamp(30px, 4vw, 46px);
+            line-height: 1.18;
+            letter-spacing: -1.5px;
+            margin-bottom: 15px;
+        }
+
+        .section-head p {
+            color: #687b8b;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-art {
+            min-height: 410px;
+            position: relative;
+            background: var(--navy);
+            border-radius: 18px;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+        }
+
+        .about-art .big-icon {
+            color: var(--blue);
+            font-size: 170px;
+            opacity: .9;
+        }
+
+        .about-art .art-label {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            right: 25px;
+            background: white;
+            border-radius: 12px;
+            padding: 18px 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            box-shadow: var(--shadow);
+        }
+
+        .art-label i {
+            color: var(--blue);
+            font-size: 25px;
+        }
+
+        .art-label strong {
+            display: block;
+            font: 800 15px Manrope;
+        }
+
+        .art-label small {
+            color: #718093;
+            font-size: 11px;
+        }
+
+        .about-copy h2 {
+            font-size: clamp(30px, 3.7vw, 43px);
+            color: var(--navy);
+            line-height: 1.2;
+            letter-spacing: -1.3px;
+            margin-bottom: 20px;
+        }
+
+        .about-copy p {
+            color: #687b8b;
+            line-height: 1.9;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .check-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 13px;
+            margin: 24px 0 30px;
+        }
+
+        .check-list span {
+            font-size: 13px;
+            font-weight: 700;
+            color: #274157;
+        }
+
+        .check-list i {
+            color: var(--blue);
+            margin-right: 8px;
+        }
+
+        .experience {
+            background: var(--pale);
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 55px;
+            align-items: start;
+        }
+
+        .experience-number {
+            background: var(--navy);
+            color: white;
+            border-radius: 18px;
+            padding: 38px;
+            position: sticky;
+            top: 120px;
+            overflow: hidden;
+        }
+
+        .experience-number:after {
+            content: "+";
+            position: absolute;
+            right: 12px;
+            bottom: -65px;
+            font: 900 190px Manrope;
+            color: rgba(22, 117, 255, .2);
+        }
+
+        .experience-number strong {
+            font: 800 76px Manrope;
+            color: var(--lime);
+            line-height: 1;
+        }
+
+        .experience-number p {
+            color: #bdcbd6;
+            font-size: 14px;
+            margin-top: 12px;
+        }
+
+        .timeline {
+            border-left: 2px solid #d7e3ec;
+            padding-left: 30px;
+            margin-left: 8px;
+        }
+
+        .timeline-item {
+            position: relative;
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 10px 35px rgba(10, 45, 70, .06);
+        }
+
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: -40px;
+            top: 34px;
+            width: 16px;
+            height: 16px;
+            background: var(--blue);
+            border: 5px solid #dceaff;
+            border-radius: 50%;
+        }
+
+        .current-pill {
+            display: inline-block;
+            background: #eff6d1;
+            color: #536321;
+            border-radius: 30px;
+            padding: 6px 11px;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .7px;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item h3 {
+            color: var(--navy);
+            font-size: 22px;
+            margin-bottom: 7px;
+        }
+
+        .timeline-item .role {
+            color: var(--blue);
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 13px;
+        }
+
+        .timeline-item p {
+            color: #6b7d8c;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .education-card {
+            display: flex;
+            gap: 22px;
+            align-items: center;
+            background: white;
+            border: 1px solid #e7edf2;
+            border-radius: 15px;
+            padding: 25px;
+            max-width: 750px;
+            box-shadow: 0 12px 35px rgba(10, 45, 70, .05);
+        }
+
+        .edu-icon {
+            flex: 0 0 70px;
+            height: 70px;
+            display: grid;
+            place-items: center;
+            border-radius: 14px;
+            background: #eaf2ff;
+            color: var(--blue);
+            font-size: 28px;
+        }
+
+        .education-card h3 {
+            color: var(--navy);
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+
+        .education-card p {
+            color: #738392;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .skills {
+            background: var(--navy);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skills .section-head h2 {
+            color: white;
+        }
+
+        .skills .section-head p {
+            color: #b3c2ce;
+        }
+
+        .skills .section-tag {
+            color: var(--lime);
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 17px;
+        }
+
+        .skill-card {
+            border: 1px solid var(--line);
+            border-radius: 13px;
+            padding: 25px 20px;
+            min-height: 160px;
+            background: rgba(255, 255, 255, .035);
+            transition: transform .3s, background .3s, border .3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            background: rgba(22, 117, 255, .15);
+            border-color: rgba(22, 117, 255, .7);
+        }
+
+        .skill-card i {
+            color: var(--lime);
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        .skill-card h3 {
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .value-card {
+            padding: 27px 23px;
+            border: 1px solid #e8eef3;
+            border-radius: 14px;
+            transition: .3s;
+        }
+
+        .value-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow);
+            border-color: transparent;
+        }
+
+        .value-card i {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: #edf4ff;
+            display: grid;
+            place-items: center;
+            color: var(--blue);
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .value-card h3 {
+            font-size: 17px;
+            color: var(--navy);
+            margin-bottom: 9px;
+        }
+
+        .value-card p {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #738392;
+        }
+
+        .quote-band {
+            background: var(--blue);
+            color: white;
+            padding: 62px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quote-band:after {
+            content: "✚";
+            position: absolute;
+            right: 8%;
+            top: -50px;
+            font-size: 220px;
+            color: rgba(255, 255, 255, .08);
+            transform: rotate(15deg);
+        }
+
+        .quote-inner {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .quote-inner h2 {
+            max-width: 760px;
+            font-size: clamp(26px, 3.5vw, 40px);
+            line-height: 1.25;
+            letter-spacing: -1px;
+        }
+
+        .quote-inner p {
+            color: #dceaff;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+
+        .contact {
+            background: var(--pale);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            gap: 50px;
+            align-items: stretch;
+        }
+
+        .contact-info {
+            background: var(--navy);
+            border-radius: 18px;
+            padding: 38px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-info h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .contact-info>p {
+            color: #b5c3d0;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .contact-row {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            margin: 19px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-row i {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            background: rgba(22, 117, 255, .2);
+            color: var(--lime);
+        }
+
+        .contact-row small {
+            display: block;
+            color: #91a5b5;
+            font-size: 10px;
+            margin-bottom: 4px;
+        }
+
+        .contact-row strong {
+            font-size: 13px;
+            font-weight: 600;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-action {
+            background: white;
+            border-radius: 18px;
+            padding: 38px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-action h3 {
+            font-size: 26px;
+            color: var(--navy);
+            margin-bottom: 12px;
+        }
+
+        .contact-action p {
+            color: #738392;
+            line-height: 1.8;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .contact-action .btn {
+            align-self: flex-start;
+        }
+
+        footer {
+            background: #041626;
+            color: #91a5b5;
+            padding: 25px 0;
+            font-size: 12px;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-inner strong {
+            color: white;
+        }
+
+        .back-top {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            z-index: 30;
+            width: 44px;
+            height: 44px;
+            border: 0;
+            border-radius: 50%;
+            background: var(--blue);
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(22, 117, 255, .3);
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: .25s;
+        }
+
+        .back-top.show {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity .75s ease, transform .75s cubic-bezier(.2, .7, .2, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0);
+            }
+
+            50% {
+                transform: translateY(-13px) rotate(1deg);
+            }
+        }
+
+        @keyframes rotate {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .photo-upload-btn {
+            margin-top: 9px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            border-radius: 30px;
+            background: var(--lime);
+            color: var(--navy);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .8px;
+            cursor: pointer;
+            transition: transform .2s;
+        }
+
+        .photo-upload-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .education-history {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            max-width: 750px;
+            margin-top: 18px;
+        }
+
+        .education-mini {
+            background: #f5f8fb;
+            border: 1px solid #e7edf2;
+            border-radius: 12px;
+            padding: 18px 20px;
+        }
+
+        .education-mini strong,
+        .education-mini span,
+        .education-mini b {
+            display: block;
+        }
+
+        .education-mini strong {
+            color: var(--navy);
+            font: 700 14px Manrope;
+            margin-bottom: 7px;
+        }
+
+        .education-mini span {
+            color: #718293;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .education-mini b {
+            color: var(--blue);
+            margin-top: 8px;
+            font-size: 13px;
+        }
+
+        .highlights {
+            background: #f7fafc;
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .highlight-card {
+            background: white;
+            border: 1px solid #e8eef3;
+            border-radius: 15px;
+            padding: 27px;
+            transition: .3s;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow);
+            border-color: transparent;
+        }
+
+        .highlight-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 13px;
+            background: #eaf2ff;
+            color: var(--blue);
+            display: grid;
+            place-items: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .highlight-kicker {
+            color: var(--blue);
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 1.3px;
+        }
+
+        .highlight-card h3 {
+            color: var(--navy);
+            font-size: 18px;
+            margin: 9px 0;
+        }
+
+        .highlight-card p {
+            color: #718293;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .achievement-row {
+            margin-top: 20px;
+            padding: 26px 30px;
+            background: var(--navy);
+            color: white;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .achievement-label {
+            color: var(--lime);
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 1.4px;
+        }
+
+        .achievement-row h3 {
+            font-size: 19px;
+            margin: 7px 0;
+        }
+
+        .achievement-row p {
+            color: #b5c3d0;
+            font-size: 12px;
+        }
+
+        .achievement-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .achievement-badges span,
+        .language-pills span {
+            border: 1px solid rgba(255, 255, 255, .25);
+            padding: 10px 13px;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .achievement-badges i {
+            color: var(--lime);
+            margin-right: 6px;
+        }
+
+        .language-row {
+            margin-top: 20px;
+            background: white;
+            border: 1px solid #e8eef3;
+            border-radius: 15px;
+            padding: 23px 28px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .language-row h3 {
+            color: var(--navy);
+            font-size: 17px;
+            margin-top: 5px;
+        }
+
+        .language-pills {
+            display: flex;
+            gap: 9px;
+        }
+
+        .language-pills span {
+            color: var(--navy);
+            border-color: #dce7ef;
+            background: #f7fafc;
+        }
+
+        .language-note {
+            margin-left: auto;
+            color: #718293;
+            font-size: 12px;
+        }
+
+        @media (max-width: 980px) {
+            .nav-links {
+                gap: 15px;
+                font-size: 11px;
+            }
+
+            .navbar {
+                padding: 0 20px;
+            }
+
+            .nav-actions .btn {
+                display: none;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr .85fr;
+            }
+
+            .float-card {
+                right: -15px;
+                width: 210px;
+            }
+
+            .skill-grid,
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .highlight-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-grid {
+                gap: 38px;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .container {
+                width: min(100% - 34px, 560px);
+            }
+
+            .top-inner {
+                min-height: 42px;
+            }
+
+            .top-contact {
+                display: none;
+            }
+
+            .nav-wrap {
+                padding-bottom: 10px;
+            }
+
+            .navbar {
+                min-height: 72px;
+                border-radius: 0 0 13px 13px;
+            }
+
+            .logo {
+                font-size: 23px;
+            }
+
+            .logo-mark {
+                width: 34px;
+                height: 34px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 16px 25px 22px;
+                flex-direction: column;
+                align-items: flex-start;
+                box-shadow: 0 15px 20px rgba(0, 0, 0, .1);
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links a {
+                width: 100%;
+            }
+
+            .nav-actions .icon-btn {
+                display: none;
+            }
+
+            .hero,
+            .hero-grid {
+                min-height: auto;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                padding-top: 50px;
+                padding-bottom: 65px;
+            }
+
+            .hero-copy {
+                padding: 0;
+            }
+
+            .hero h1 {
+                font-size: clamp(39px, 11vw, 58px);
+                letter-spacing: -1.8px;
+            }
+
+            .hero-copy>p {
+                font-size: 14px;
+            }
+
+            .hero-stats {
+                gap: 22px;
+                margin-top: 32px;
+            }
+
+            .stat strong {
+                font-size: 23px;
+            }
+
+            .stat span {
+                font-size: 9px;
+            }
+
+            .hero-visual {
+                min-height: 420px;
+                margin-top: 10px;
+            }
+
+            .portrait-shape {
+                height: 390px;
+                width: min(350px, 82%);
+            }
+
+            .float-card {
+                top: 35px;
+                right: -2px;
+                width: 180px;
+                padding: 15px;
+            }
+
+            .float-card p {
+                font-size: 11px;
+            }
+
+            .plus {
+                top: 40px;
+                left: 0;
+                font-size: 45px;
+            }
+
+            .orbit {
+                width: 370px;
+                height: 370px;
+            }
+
+            .social-rail {
+                display: none;
+            }
+
+            section.content-section {
+                padding: 72px 0;
+            }
+
+            .about-grid,
+            .experience-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .about-art {
+                min-height: 300px;
+            }
+
+            .about-art .big-icon {
+                font-size: 125px;
+            }
+
+            .experience-number {
+                position: relative;
+                top: auto;
+            }
+
+            .timeline {
+                margin-left: 7px;
+            }
+
+            .skill-grid,
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .highlight-grid,
+            .education-history {
+                grid-template-columns: 1fr;
+            }
+
+            .achievement-row {
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 24px;
+            }
+
+            .language-row {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 13px;
+            }
+
+            .language-note {
+                margin-left: 0;
+            }
+
+            .skill-card {
+                min-height: 135px;
+                padding: 19px 15px;
+            }
+
+            .skill-card h3 {
+                font-size: 13px;
+            }
+
+            .value-card {
+                padding: 20px 16px;
+            }
+
+            .quote-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-info,
+            .contact-action {
+                padding: 28px 23px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .check-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *:before,
+            *:after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                transition-duration: .01ms !important;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Premium typography system: Manrope for headings, Roboto for all body/UI text */
+        body,
+        button,
+        input,
+        textarea,
+        select,
+        p,
+        a,
+        li,
+        span,
+        small,
+        label,
+        strong,
+        b {
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .logo,
+        .brand-mini,
+        .stat strong,
+        .experience-number strong {
+            font-family: "Manrope", sans-serif;
+        }
+
+        body {
+            letter-spacing: .005em;
+        }
+
+        p {
+            font-weight: 400;
+        }
+
+        .section-head {
+            position: relative;
+        }
+
+        .section-head h2 {
+            max-width: 720px;
+        }
+
+        .section-head p {
+            max-width: 620px;
+        }
+
+        .section-tag {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .hero h1 {
+            font-weight: 800;
+        }
+
+        .hero-copy>p {
+            max-width: 590px;
+        }
+
+        .navbar {
+            border: 1px solid rgba(6, 29, 50, .06);
+        }
+
+        .nav-links a {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .content-section {
+            position: relative;
+        }
+
+        .about-art {
+            background:
+                radial-gradient(circle at 25% 25%, rgba(22, 117, 255, .35), transparent 34%),
+                linear-gradient(145deg, #061d32 0%, #0b3455 100%);
+            box-shadow: 0 25px 65px rgba(6, 29, 50, .16);
+        }
+
+        .about-art:before,
+        .about-art:after {
+            content: "";
+            position: absolute;
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: 50%;
+            width: 280px;
+            height: 280px;
+        }
+
+        .about-art:after {
+            width: 360px;
+            height: 360px;
+        }
+
+        .about-art .big-icon {
+            position: relative;
+            z-index: 1;
+            filter: drop-shadow(0 10px 22px rgba(22, 117, 255, .35));
+        }
+
+        .art-label {
+            z-index: 2;
+        }
+
+        .education-card,
+        .education-mini,
+        .highlight-card,
+        .value-card,
+        .contact-action {
+            box-shadow: 0 14px 40px rgba(6, 29, 50, .055);
+            transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+        }
+
+        .education-card:hover,
+        .education-mini:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 22px 50px rgba(6, 29, 50, .1);
+        }
+
+        .education-card {
+            border-radius: 18px;
+            padding: 30px;
+        }
+
+        .edu-icon {
+            background: linear-gradient(145deg, #eaf2ff, #dceaff);
+        }
+
+        .education-mini {
+            border-radius: 15px;
+        }
+
+        .experience-number {
+            background:
+                radial-gradient(circle at 100% 0%, rgba(22, 117, 255, .28), transparent 38%),
+                linear-gradient(145deg, #061d32, #0b3455);
+            box-shadow: 0 24px 60px rgba(6, 29, 50, .16);
+        }
+
+        .timeline-item {
+            border: 1px solid #eaf0f5;
+            border-radius: 18px;
+        }
+
+        .timeline-item h3 {
+            letter-spacing: -.5px;
+        }
+
+        .skill-card {
+            background: linear-gradient(145deg, rgba(255, 255, 255, .065), rgba(255, 255, 255, .025));
+            border-radius: 17px;
+            min-height: 170px;
+            padding: 28px 23px;
+        }
+
+        .skill-card i {
+            width: 48px;
+            height: 48px;
+            display: grid;
+            place-items: center;
+            border-radius: 14px;
+            background: rgba(22, 117, 255, .18);
+        }
+
+        .skill-card h3 {
+            font-size: 15px;
+            line-height: 1.55;
+        }
+
+        .highlight-card {
+            border-radius: 18px;
+            min-height: 245px;
+        }
+
+        .highlight-card:hover,
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 24px 55px rgba(6, 29, 50, .11);
+        }
+
+        .highlight-icon {
+            background: linear-gradient(145deg, #eaf2ff, #dceaff);
+        }
+
+        .achievement-row {
+            background:
+                radial-gradient(circle at 95% 10%, rgba(22, 117, 255, .25), transparent 32%),
+                linear-gradient(120deg, #061d32, #0a2d49);
+            border: 1px solid rgba(255, 255, 255, .08);
+            border-radius: 18px;
+        }
+
+        .language-row {
+            border-radius: 18px;
+            box-shadow: 0 14px 40px rgba(6, 29, 50, .05);
+        }
+
+        .language-pills span {
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+        }
+
+        .value-card {
+            border-radius: 17px;
+            padding: 29px 24px;
+        }
+
+        .value-card i {
+            background: linear-gradient(145deg, #eaf2ff, #dceaff);
+        }
+
+        .contact-info {
+            background:
+                radial-gradient(circle at 100% 0%, rgba(22, 117, 255, .3), transparent 35%),
+                linear-gradient(145deg, #061d32, #0b3455);
+            box-shadow: 0 24px 60px rgba(6, 29, 50, .15);
+        }
+
+        .contact-action {
+            border: 1px solid #eaf0f5;
+            border-radius: 18px;
+        }
+
+        .quote-band {
+            background: linear-gradient(110deg, #0756cf, #1675ff 60%, #2b86ff);
+        }
+
+        .btn {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .btn-blue {
+            box-shadow: 0 9px 22px rgba(22, 117, 255, .16);
+        }
+
+        .btn-lime {
+            box-shadow: 0 9px 22px rgba(228, 238, 165, .12);
+        }
+
+        .footer-inner {
+            letter-spacing: .2px;
+        }
+
+        @media (max-width: 720px) {
+            .skill-card {
+                min-height: 145px;
+            }
+
+            .highlight-card {
+                min-height: 0;
+            }
+
+            .education-card {
+                padding: 22px;
+            }
+
+            .achievement-row {
+                padding: 24px 21px;
+            }
+
+            .language-row {
+                gap: 15px;
+                padding: 22px;
+            }
+
+            .language-note {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+
+
+        /* ===== Modern editorial section redesign ===== */
+        :root {
+            --section-radius: 24px;
+            --section-border: #e7edf3;
+            --section-shadow: 0 18px 55px rgba(6, 29, 50, .075);
+        }
+
+        section.content-section {
+            padding: clamp(76px, 8vw, 116px) 0;
+        }
+
+        section.content-section .container {
+            position: relative;
+        }
+
+        .section-head {
+            max-width: 780px;
+            margin: 0 auto 54px;
+            text-align: center;
+        }
+
+        .section-head .section-tag {
+            justify-content: center;
+        }
+
+        .section-head .section-tag:after {
+            content: "";
+            width: 25px;
+            height: 2px;
+            background: var(--lime);
+        }
+
+        .section-head h2 {
+            margin: 0 auto 17px;
+            max-width: 720px;
+            font-size: clamp(32px, 4.4vw, 51px);
+            line-height: 1.12;
+            letter-spacing: -1.8px;
+        }
+
+        .section-head p {
+            margin: 0 auto;
+            max-width: 630px;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+
+        .section-tag {
+            font-size: 10px;
+            letter-spacing: 2.2px;
+            margin-bottom: 18px;
+        }
+
+        #about {
+            background: linear-gradient(180deg, #fff 0%, #f7faff 100%);
+        }
+
+        .about-grid {
+            gap: clamp(38px, 6vw, 82px);
+        }
+
+        .about-art {
+            min-height: 470px;
+            border-radius: 28px;
+            box-shadow: 0 30px 75px rgba(6, 29, 50, .18);
+            isolation: isolate;
+        }
+
+        .about-art:before {
+            width: 340px;
+            height: 340px;
+            border: 1px solid rgba(255, 255, 255, .14);
+        }
+
+        .about-art:after {
+            width: 430px;
+            height: 430px;
+            border: 1px dashed rgba(255, 255, 255, .16);
+        }
+
+        .about-art .big-icon {
+            font-size: clamp(130px, 16vw, 190px);
+        }
+
+        .art-label {
+            left: 22px;
+            right: 22px;
+            bottom: 22px;
+            padding: 20px 22px;
+            border-radius: 17px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .18);
+        }
+
+        .about-copy .section-tag {
+            margin-bottom: 15px;
+        }
+
+        .about-copy h2 {
+            font-size: clamp(34px, 4vw, 48px);
+            letter-spacing: -1.8px;
+            line-height: 1.12;
+        }
+
+        .about-copy p {
+            font-size: 15px;
+            line-height: 1.95;
+        }
+
+        .check-list {
+            gap: 12px;
+        }
+
+        .check-list span {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            background: white;
+            border: 1px solid #e8eef5;
+            border-radius: 11px;
+            padding: 12px 13px;
+            font-size: 12px;
+            box-shadow: 0 6px 18px rgba(6, 29, 50, .035);
+        }
+
+        .check-list i {
+            margin: 0;
+        }
+
+        #experience {
+            background: #f2f6fa;
+            overflow: hidden;
+        }
+
+        #experience:before {
+            content: "";
+            position: absolute;
+            width: 430px;
+            height: 430px;
+            border-radius: 50%;
+            border: 1px solid rgba(22, 117, 255, .09);
+            right: -220px;
+            top: 80px;
+            pointer-events: none;
+        }
+
+        .experience-grid {
+            grid-template-columns: .65fr 1.35fr;
+            gap: 35px;
+        }
+
+        .experience-number {
+            border-radius: 24px;
+            min-height: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 38px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .experience-number:before {
+            content: "";
+            position: absolute;
+            width: 190px;
+            height: 190px;
+            border: 1px solid rgba(255, 255, 255, .16);
+            border-radius: 50%;
+            right: -55px;
+            top: -55px;
+        }
+
+        .experience-number strong {
+            font-size: 88px;
+            letter-spacing: -5px;
+        }
+
+        .experience-number p {
+            max-width: 140px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .timeline {
+            border: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeline-item {
+            min-height: 280px;
+            padding: clamp(27px, 4vw, 42px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid #e6edf4;
+            border-radius: 24px;
+            box-shadow: 0 18px 55px rgba(6, 29, 50, .07);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .timeline-item:before {
+            display: none;
+        }
+
+        .timeline-item:after {
+            content: "\f0f0";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 28px;
+            bottom: 5px;
+            font-size: 112px;
+            color: rgba(22, 117, 255, .055);
+            pointer-events: none;
+        }
+
+        .current-pill {
+            align-self: flex-start;
+            padding: 8px 13px;
+            margin-bottom: 18px;
+        }
+
+        .timeline-item h3 {
+            font-size: clamp(23px, 3vw, 30px);
+            letter-spacing: -1px;
+        }
+
+        .timeline-item .role {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item p {
+            max-width: 590px;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        #education {
+            background: white;
+        }
+
+        .education-card {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 30px 34px;
+            border-radius: 22px;
+            border: 1px solid #e4ebf2;
+            background: linear-gradient(120deg, #fff 0%, #f6faff 100%);
+            box-shadow: 0 20px 60px rgba(6, 29, 50, .07);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .education-card:after {
+            content: "\f19d";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 28px;
+            top: 22px;
+            color: rgba(22, 117, 255, .07);
+            font-size: 100px;
+        }
+
+        .edu-icon {
+            flex-basis: 76px;
+            height: 76px;
+            border-radius: 19px;
+            font-size: 30px;
+        }
+
+        .education-card h3 {
+            font-size: 23px;
+            letter-spacing: -.7px;
+        }
+
+        .education-card p {
+            font-size: 13px;
+            line-height: 1.85;
+        }
+
+        .education-history {
+            max-width: 850px;
+            margin: 18px auto 0;
+            gap: 18px;
+        }
+
+        .education-mini {
+            border-radius: 17px;
+            padding: 23px;
+            background: #f7f9fc;
+            border: 1px solid #e8eef4;
+        }
+
+        .education-mini strong {
+            font: 700 15px Manrope, sans-serif;
+        }
+
+        #skills {
+            background:
+                radial-gradient(circle at 85% 12%, rgba(22, 117, 255, .16), transparent 28%),
+                linear-gradient(145deg, #061d32 0%, #082943 100%);
+            overflow: hidden;
+        }
+
+        #skills:after {
+            content: "";
+            position: absolute;
+            left: -190px;
+            bottom: -250px;
+            width: 450px;
+            height: 450px;
+            border: 1px solid rgba(255, 255, 255, .07);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        #skills .section-head {
+            position: relative;
+            z-index: 1;
+        }
+
+        #skills .section-head h2 {
+            font-size: clamp(34px, 4.5vw, 52px);
+        }
+
+        .skill-grid {
+            position: relative;
+            z-index: 1;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .skill-card {
+            min-height: 178px;
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, .11);
+            background: linear-gradient(145deg, rgba(255, 255, 255, .09), rgba(255, 255, 255, .025));
+            backdrop-filter: blur(8px);
+        }
+
+        .skill-card:nth-child(1),
+        .skill-card:nth-child(6) {
+            background: linear-gradient(145deg, rgba(22, 117, 255, .34), rgba(22, 117, 255, .09));
+            border-color: rgba(91, 158, 255, .38);
+        }
+
+        .skill-card i {
+            width: 47px;
+            height: 47px;
+            border-radius: 15px;
+            display: grid;
+            place-items: center;
+            font-size: 21px;
+            background: rgba(228, 238, 165, .12);
+            color: var(--lime);
+            margin-bottom: 24px;
+        }
+
+        .skill-card h3 {
+            font-size: 15px;
+            line-height: 1.55;
+        }
+
+        #highlights {
+            background: #f4f7fb;
+        }
+
+        .highlight-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .highlight-card {
+            min-height: 290px;
+            border: 1px solid #e6edf4;
+            border-radius: 22px;
+            padding: 30px;
+            box-shadow: 0 12px 38px rgba(6, 29, 50, .045);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-card:after {
+            content: "";
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 1px solid #edf2f8;
+            right: -55px;
+            bottom: -55px;
+        }
+
+        .highlight-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 17px;
+            font-size: 22px;
+        }
+
+        .highlight-kicker {
+            font-size: 9px;
+            letter-spacing: 1.5px;
+        }
+
+        .highlight-card h3 {
+            font-size: 21px;
+            line-height: 1.25;
+            margin: 12px 0;
+        }
+
+        .highlight-card p {
+            font-size: 13px;
+            line-height: 1.9;
+        }
+
+        .achievement-row {
+            margin-top: 22px;
+            padding: 30px 34px;
+            border-radius: 22px;
+            box-shadow: 0 20px 50px rgba(6, 29, 50, .14);
+        }
+
+        .achievement-row h3 {
+            font-size: 22px;
+        }
+
+        .achievement-badges span {
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, .08);
+            border-color: rgba(255, 255, 255, .18);
+        }
+
+        .language-row {
+            padding: 25px 30px;
+            border-radius: 20px;
+        }
+
+        #values {
+            background: white;
+        }
+
+        .values-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 17px;
+        }
+
+        .value-card {
+            border: 1px solid #e7edf3;
+            border-radius: 20px;
+            padding: 27px 23px;
+            min-height: 220px;
+            background: linear-gradient(155deg, #fff 0%, #f8fbff 100%);
+            box-shadow: 0 10px 30px rgba(6, 29, 50, .035);
+        }
+
+        .value-card i {
+            width: 54px;
+            height: 54px;
+            border-radius: 17px;
+            font-size: 21px;
+            margin-bottom: 22px;
+        }
+
+        .value-card h3 {
+            font-size: 18px;
+            margin-bottom: 11px;
+        }
+
+        .value-card p {
+            font-size: 13px;
+            line-height: 1.85;
+        }
+
+        .quote-band {
+            padding: 75px 0;
+        }
+
+        .quote-inner h2 {
+            font-size: clamp(28px, 4vw, 45px);
+            max-width: 790px;
+        }
+
+        #contact {
+            background: linear-gradient(180deg, #f3f7fa 0%, #eaf1f7 100%);
+        }
+
+        .contact-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .contact-info,
+        .contact-action {
+            border-radius: 24px;
+            padding: clamp(28px, 4vw, 44px);
+        }
+
+        .contact-info h2 {
+            font-size: 38px;
+            letter-spacing: -1.3px;
+        }
+
+        .contact-row {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, .09);
+        }
+
+        .contact-row:last-child {
+            border-bottom: 0;
+        }
+
+        .contact-row i {
+            width: 48px;
+            height: 48px;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .contact-action {
+            box-shadow: 0 18px 50px rgba(6, 29, 50, .07);
+        }
+
+        .contact-action h3 {
+            font-size: clamp(25px, 3vw, 34px);
+            letter-spacing: -1px;
+            line-height: 1.2;
+        }
+
+        footer {
+            padding: 30px 0;
+        }
+
+        @media (max-width: 980px) {
+            .skill-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .values-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .experience-grid {
+                grid-template-columns: .7fr 1.3fr;
+            }
+        }
+
+        @media (max-width: 720px) {
+            section.content-section {
+                padding: 74px 0;
+            }
+
+            .section-head {
+                text-align: left;
+                margin-bottom: 34px;
+            }
+
+            .section-head .section-tag {
+                justify-content: flex-start;
+            }
+
+            .section-head .section-tag:after {
+                display: none;
+            }
+
+            .section-head h2,
+            .section-head p {
+                margin-left: 0;
+            }
+
+            .about-art {
+                min-height: 330px;
+                border-radius: 22px;
+            }
+
+            .about-grid {
+                gap: 35px;
+            }
+
+            .experience-grid {
+                grid-template-columns: 1fr;
+                gap: 17px;
+            }
+
+            .experience-number {
+                min-height: 210px;
+                padding: 28px;
+            }
+
+            .experience-number strong {
+                font-size: 72px;
+            }
+
+            .timeline-item {
+                min-height: 0;
+                padding: 27px 23px;
+            }
+
+            .education-card {
+                padding: 23px;
+                align-items: flex-start;
+            }
+
+            .education-card:after {
+                font-size: 65px;
+                right: 12px;
+                top: 12px;
+            }
+
+            .education-card h3 {
+                font-size: 19px;
+            }
+
+            .education-history {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 11px;
+            }
+
+            .skill-card {
+                min-height: 150px;
+                padding: 19px 16px;
+                border-radius: 16px;
+            }
+
+            .skill-card i {
+                width: 42px;
+                height: 42px;
+                margin-bottom: 18px;
+            }
+
+            .highlight-grid {
+                grid-template-columns: 1fr;
+                gap: 13px;
+            }
+
+            .highlight-card {
+                min-height: 0;
+                padding: 24px;
+                border-radius: 18px;
+            }
+
+            .achievement-row {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 25px 23px;
+            }
+
+            .language-row {
+                align-items: flex-start;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 11px;
+            }
+
+            .value-card {
+                min-height: 0;
+                padding: 21px 17px;
+                border-radius: 16px;
+            }
+
+            .value-card i {
+                width: 46px;
+                height: 46px;
+                margin-bottom: 17px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+
+            .contact-info,
+            .contact-action {
+                padding: 28px 23px;
+                border-radius: 20px;
+            }
+
+            .quote-band {
+                padding: 58px 0;
+            }
+        }
+
+        @media (max-width: 380px) {
+
+            .skill-grid,
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-card {
+                min-height: 125px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-strip">
+        <div class="container top-inner">
+            <div class="brand-mini"><span>✚</span> NAMARTA <span style="color:#aebdca;font-weight:500">/
+                    PORTFOLIO</span></div>
+            <div class="top-contact">
+                <span><i class="fa-solid fa-location-dot"></i>Bhopal, Madhya Pradesh</span>
+                <a href="mailto:try.dev@gmail.com"><i class="fa-solid fa-envelope"></i>try.dev@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-wrap">
+        <div class="container">
+            <nav class="navbar" aria-label="Main navigation">
+                <a class="logo" href="#home">
+                    <span class="logo-mark"><i class="fa-solid fa-heart-pulse"></i></span>
+                    <span>NAMARTA<small>NURSING PROFESSIONAL</small></span>
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#experience">EXPERIENCE</a>
+                    <a href="#education">EDUCATION</a><a href="#skills">SKILLS</a><a href="#highlights">HIGHLIGHTS</a><a
+                        href="#contact">CONTACT</a>
+                </div>
+                <div class="nav-actions">
+                    <a class="btn btn-lime" href="#contact">LET'S CONNECT <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false"><i
+                            class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="eyebrow"><i class="fa-solid fa-heart"></i> HELLO, I AM NAMARTA</div>
+                    <h1>Compassionate Care.<br><span>Committed to</span><br>Every Life.</h1>
+                    <p>I am Namarta Mankar, a B.Sc Nursing graduate and Staff Nurse with 4+ years of professional
+                        nursing experience. I currently work at Noble Multispeciality Hospital, Bhopal. My clinical
+                        journey includes exposure to reputed healthcare institutions, and I am committed to safe,
+                        compassionate and patient-centred care.</p>
+                    <div class="hero-buttons">
+                        <a class="btn btn-blue" href="#about">ABOUT ME <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a class="btn btn-outline" href="#experience">MY EXPERIENCE <i
+                                class="fa-solid fa-arrow-down"></i></a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat"><strong>4+</strong><span>YEARS EXPERIENCE</span></div>
+                        <div class="stat"><strong>B.Sc</strong><span>NURSING QUALIFICATION</span></div>
+                        <div class="stat"><strong>01</strong><span>HEALTHCARE PROFESSIONAL</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="orbit"></div>
+                    <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                    <div class="portrait-shape">
+                        <div class="photo-placeholder" id="photoPlaceholder">
+                            <i class="fa-solid fa-user-nurse"></i>
+                            <strong>Namarta Mankar</strong>
+                            <span>Upload a professional portrait to personalize this portfolio</span>
+                            <label class="photo-upload-btn" for="photoUpload"><i class="fa-solid fa-camera"></i> ADD
+                                PHOTO</label>
+                            <input type="file" id="photoUpload" accept="image/*" hidden>
+                        </div>
+                        <img class="portrait-img" id="portraitImg" alt="Professional portrait of Namarta Mankar">
+                    </div>
+                    <div class="float-card">
+                        <p>“Care is the heart of nursing, and compassion makes every act of care meaningful.”</p>
+                        <b>— MY NURSING PHILOSOPHY</b>
+                    </div>
+                    <svg class="ecg" viewBox="0 0 500 130" fill="none" aria-hidden="true">
+                        <path
+                            d="M0 70 H110 L130 70 L145 48 L160 92 L179 12 L198 120 L218 70 H270 L285 70 L300 56 L314 83 L330 70 H500"
+                            stroke="#1675ff" stroke-width="2" />
+                    </svg>
+                </div>
+            </div>
+            <div class="social-rail" aria-label="Social links">
+                <a href="mailto:try.dev@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:1234567890" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                <a href="#contact" aria-label="Contact"><i class="fa-solid fa-address-card"></i></a>
+            </div>
+        </section>
+
+        <section class="content-section" id="about">
+            <div class="container about-grid">
+                <div class="about-art reveal">
+                    <i class="fa-solid fa-heart-pulse big-icon"></i>
+                    <div class="art-label">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                        <div><strong>Care with compassion</strong><small>Professional nursing, human connection</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-copy reveal">
+                    <div class="section-tag">GET TO KNOW ME</div>
+                    <h2>Dedicated to Care.<br>Driven by Compassion.</h2>
+                    <p>I am Namarta Mankar, a B.Sc Nursing graduate and Staff Nurse with 4+ years of experience in the
+                        healthcare field. I am currently working at Noble Multispeciality Hospital, Bhopal, where I
+                        continue to strengthen my clinical practice and commitment to quality patient care.</p>
+                    <p>My earlier clinical experience and exposure includes Kasturba Hospital, Bhopal, Bhopal Memorial
+                        Hospital and Research Centre, and Jawaharlal Nehru Cancer Hospital. I bring a patient-first
+                        approach, sound clinical fundamentals, and a strong sense of responsibility to my work.</p>
+                    <div class="check-list">
+                        <span><i class="fa-solid fa-circle-check"></i>Patient-focused approach</span>
+                        <span><i class="fa-solid fa-circle-check"></i>Professional responsibility</span>
+                        <span><i class="fa-solid fa-circle-check"></i>Collaborative teamwork</span>
+                        <span><i class="fa-solid fa-circle-check"></i>Commitment to learning</span>
+                    </div>
+                    <a href="#contact" class="btn btn-blue">GET IN TOUCH <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section experience" id="experience">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="section-tag">MY CAREER JOURNEY</div>
+                    <h2>Professional Experience</h2>
+                    <p>4+ years of professional nursing experience, including current employment at Noble
+                        Multispeciality Hospital and previous clinical exposure at established hospitals in Bhopal.</p>
+                </div>
+                <div class="experience-grid">
+                    <div class="experience-number reveal"><strong>4+</strong>
+                        <p>Years of nursing experience</p>
+                    </div>
+                    <div class="timeline reveal">
+                        <article class="timeline-item">
+                            <span class="current-pill">CURRENT WORKPLACE</span>
+                            <h3>Noble Multispeciality Hospital</h3>
+                            <div class="role">Staff Nurse · Bhopal, Madhya Pradesh</div>
+                            <p>Currently working as a Staff Nurse at Noble Multispeciality Hospital, Bhopal. Bringing a
+                                patient-centered mindset, professional dedication and a commitment to quality nursing
+                                care.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="education">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="section-tag">ACADEMIC BACKGROUND</div>
+                    <h2>Education & Qualification</h2>
+                    <p>A foundation in nursing education supporting a career dedicated to healthcare and patient
+                        well-being.</p>
+                </div>
+                <div class="education-card reveal">
+                    <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div>
+                        <h3>Bachelor of Science (B.Sc.) Nursing</h3>
+                        <p><strong>Kasturba College of Nursing, BHEL</strong><br>Bhopal, Madhya Pradesh ·
+                            2018–2023<br><strong style="color:#1675ff">Percentage: 72.43%</strong></p>
+                    </div>
+                </div>
+                <div class="education-history reveal">
+                    <div class="education-mini"><strong>Higher Secondary Education (12th)</strong><span>Government
+                            Excellence School, Multai · MPBSE · 2016–2018</span><b>64%</b></div>
+                    <div class="education-mini"><strong>Secondary Education (10th)</strong><span>Government H.S. School,
+                            Sonora · MPBSE · 2016</span><b>62.17%</b></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section skills" id="skills">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="section-tag">PROFESSIONAL CAPABILITIES</div>
+                    <h2>Skills & Areas of Focus</h2>
+                    <p>Core nursing competencies and professional strengths. This section can be refined to match
+                        Namarta's exact clinical experience.</p>
+                </div>
+                <div class="skill-grid">
+                    <article class="skill-card reveal"><i class="fa-solid fa-hand-holding-medical"></i>
+                        <h3>Direct Patient Care</h3>
+                    </article>
+                    <article class="skill-card reveal"><i class="fa-solid fa-file-medical"></i>
+                        <h3>Medical History & Assessment</h3>
+                    </article>
+                    <article class="skill-card reveal"><i class="fa-solid fa-wave-square"></i>
+                        <h3>Vital Signs Monitoring</h3>
+                    </article>
+                    <article class="skill-card reveal"><i class="fa-solid fa-clipboard-check"></i>
+                        <h3>Care Planning</h3>
+                    </article>
+                    <article class="skill-card reveal"><i class="fa-solid fa-pills"></i>
+                        <h3>Medication Administration</h3>
+                    </article>
+                    <article class="skill-card reveal"><i class="fa-solid fa-droplet"></i>
+                        <h3>Blood Withdrawal</h3>
+                    </article>
+                    <article class="skill-card reveal"><i class="fa-solid fa-syringe"></i>
+                        <h3>COVID-19 Vaccination</h3>
+                    </article>
+                    <article class="skill-card reveal"><i class="fa-solid fa-kit-medical"></i>
+                        <h3>Catheterization</h3>
+                    </article>
+                    <article class="skill-card reveal"><i class="fa-solid fa-heart-pulse"></i>
+                        <h3>ABG</h3>
+                    </article>
+                    <article class="skill-card reveal"><i class="fa-solid fa-staff-snake"></i>
+                        <h3>Cannulation</h3>
+                    </article>
+                    <article class="skill-card reveal"><i class="fa-solid fa-people-group"></i>
+                        <h3>Teamwork & Communication</h3>
+                    </article>
+                    <article class="skill-card reveal"><i class="fa-solid fa-notes-medical"></i>
+                        <h3>Ryle's Tube Insertion</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section highlights" id="highlights">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="section-tag">BEYOND DAILY PRACTICE</div>
+                    <h2>Research, Recognition & Achievements</h2>
+                    <p>A snapshot of academic research, public-health participation and activities recorded in the
+                        earlier resume.</p>
+                </div>
+                <div class="highlight-grid">
+                    <article class="highlight-card reveal">
+                        <div class="highlight-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <span class="highlight-kicker">ACADEMIC RESEARCH</span>
+                        <h3>Child Abuse</h3>
+                        <p>Final-year academic research conducted on the topic of child abuse. Role: Group Member.</p>
+                    </article>
+                    <article class="highlight-card reveal">
+                        <div class="highlight-icon"><i class="fa-solid fa-award"></i></div>
+                        <span class="highlight-kicker">PUBLIC HEALTH CONTRIBUTION</span>
+                        <h3>Health Mission Appreciation</h3>
+                        <p>Appreciation recorded for participation in the COVID-19 vaccination mission and Pulse Polio
+                            campaign in Bhopal.</p>
+                    </article>
+                    <article class="highlight-card reveal">
+                        <div class="highlight-icon"><i class="fa-solid fa-hospital"></i></div>
+                        <span class="highlight-kicker">PROFESSIONAL RECOGNITION</span>
+                        <h3>Hospital & Community Recognition</h3>
+                        <p>Appreciations noted from the Office of the Chief Medical and Health Officer, Bhopal, and
+                            Jawaharlal Nehru Cancer Hospital for participation in cancer-awareness activities.</p>
+                    </article>
+                </div>
+                <div class="achievement-row reveal">
+                    <div><span class="achievement-label">SPORTS & TEAM ACTIVITIES</span>
+                        <h3>Active beyond the clinical environment</h3>
+                        <p>Third place in Javelin Throw · Second place in Tug of War</p>
+                    </div>
+                    <div class="achievement-badges"><span><i class="fa-solid fa-medal"></i> Javelin · 3rd</span><span><i
+                                class="fa-solid fa-trophy"></i> Tug of War · 2nd</span></div>
+                </div>
+                <div class="language-row reveal">
+                    <div><span class="highlight-kicker">LANGUAGES</span>
+                        <h3>Communication</h3>
+                    </div>
+                    <div class="language-pills"><span>English</span><span>Hindi</span></div>
+                    <div class="language-note">Hobbies: Photography · Travel · Learning languages</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="values">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="section-tag">WHAT GUIDES MY WORK</div>
+                    <h2>The Values Behind My Care</h2>
+                    <p>Every interaction is an opportunity to make a positive difference through thoughtful, respectful
+                        care.</p>
+                </div>
+                <div class="values-grid">
+                    <article class="value-card reveal"><i class="fa-solid fa-heart"></i>
+                        <h3>Compassion</h3>
+                        <p>Approaching every patient with kindness, empathy and respect.</p>
+                    </article>
+                    <article class="value-card reveal"><i class="fa-solid fa-user-shield"></i>
+                        <h3>Responsibility</h3>
+                        <p>Valuing professional conduct, accountability and patient dignity.</p>
+                    </article>
+                    <article class="value-card reveal"><i class="fa-solid fa-hands-holding-circle"></i>
+                        <h3>Dedication</h3>
+                        <p>Bringing commitment and care to the responsibilities of nursing.</p>
+                    </article>
+                    <article class="value-card reveal"><i class="fa-solid fa-people-arrows-left-right"></i>
+                        <h3>Teamwork</h3>
+                        <p>Recognizing the importance of collaboration in healthcare.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-band">
+            <div class="container quote-inner reveal">
+                <div>
+                    <h2>“Nursing is a work of heart — built on knowledge, strengthened by compassion.”</h2>
+                    <p>Namarta Mankar · Staff Nurse</p>
+                </div>
+                <a class="btn btn-lime" href="#contact">CONNECT WITH ME <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section class="content-section contact" id="contact">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="section-tag">LET'S CONNECT</div>
+                    <h2>Get in Touch</h2>
+                    <p>For professional opportunities, healthcare networking and career-related inquiries, feel free to
+                        connect.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h2>Contact<br>Information</h2>
+                        <p>I would be happy to connect and discuss professional opportunities.</p>
+                        <div class="contact-row"><i class="fa-solid fa-user"></i>
+                            <div><small>NAME</small><strong>Namarta Mankar</strong></div>
+                        </div>
+                        <div class="contact-row"><i class="fa-solid fa-phone"></i>
+                            <div><small>PHONE</small><strong><a href="tel:1234567890">1234567890</a></strong></div>
+                        </div>
+                        <div class="contact-row"><i class="fa-solid fa-envelope"></i>
+                            <div><small>EMAIL</small><strong><a
+                                        href="mailto:try.dev@gmail.com">try.dev@gmail.com</a></strong></div>
+                        </div>
+                        <div class="contact-row"><i class="fa-solid fa-location-dot"></i>
+                            <div><small>LOCATION</small><strong>Bhopal, Madhya Pradesh</strong></div>
+                        </div>
+                    </div>
+                    <div class="contact-action reveal">
+                        <h3>Let's make a meaningful connection.</h3>
+                        <p>Reach out by phone or email for professional communication. I look forward to connecting with
+                            you.</p>
+                        <a class="btn btn-blue"
+                            href="mailto:try.dev@gmail.com?subject=Professional%20Enquiry%20-%20Namarta%20Mankar">SEND
+                            AN EMAIL <i class="fa-solid fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div><strong>NAMARTA MANKAR</strong> · Nursing Professional Portfolio</div>
+            <div>© <span id="year"></span> Namarta Mankar. All Rights Reserved.</div>
+        </div>
+    </footer>
+    <button class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+        // Mobile navigation
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        menuBtn.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            menuBtn.setAttribute('aria-expanded', String(isOpen));
+            menuBtn.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+        });
+        navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        }));
+
+        // Reveal sections as they enter the viewport
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Back-to-top visibility
+        const backTop = document.getElementById('backTop');
+        window.addEventListener('scroll', () => {
+            backTop.classList.toggle('show', window.scrollY > 500);
+        }, { passive: true });
+        backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // Let the portfolio owner preview a local professional portrait in the hero.
+        const photoUpload = document.getElementById('photoUpload');
+        const portrait = document.getElementById('portraitImg');
+        if (photoUpload) {
+            photoUpload.addEventListener('change', event => {
+                const file = event.target.files && event.target.files[0];
+                if (!file || !file.type.startsWith('image/')) return;
+                const reader = new FileReader();
+                reader.onload = e => {
+                    portrait.src = e.target.result;
+                    portrait.style.display = 'block';
+                    document.getElementById('photoPlaceholder').style.display = 'none';
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        // Current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+    </script>
+</body>
+
+</html>
